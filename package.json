@@ -7,8 +7,8 @@
         "monaca-plugin-monaca-core": "3.2.1",
         "cordova-plugin-geolocation": "4.0.1",
         "cordova-plugin-network-information": "2.0.1",
-        "cordova-plugin-vibration": "2.1.6",
-        "cordova-plugin-dialogs": "2.0.1"
+        "cordova-plugin-dialogs": "2.0.1",
+        "cordova-plugin-vibration": "2.1.6"
     },
     "cordova": {
         "plugins": {
@@ -18,8 +18,8 @@
             "monaca-plugin-monaca-core": {},
             "cordova-plugin-geolocation": {},
             "cordova-plugin-network-information": {},
-            "cordova-plugin-vibration": {},
-            "cordova-plugin-dialogs": {}
+            "cordova-plugin-dialogs": {},
+            "cordova-plugin-vibration": {}
         }
     },
     "scripts": {
