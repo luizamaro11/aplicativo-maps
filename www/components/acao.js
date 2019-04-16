@@ -12,38 +12,24 @@ $(document).on('click','#mapa',function(){
       navigator.notification.beep(3);
       alert(states[networkState]);      
       }
-    else{
-
-    }
+      else if(states[networkState] != states[Connection.WIFI]){
+       navigator.notification.beep(1);      
+      }
   }
     checkConnection();
-  // o programa nesse momento irá pegar a localização atual do dispositivo e mostrará a localização
 
-    document.addEventListener("deviceready", onDeviceReady, false);
-    var watchID = null;
 
-    function onDeviceReady() {
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
-        var options = { timeout: 30000 };
-        watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
-    }
+    // código para pegar a localização no mapquest;
+   
+  window.onload = function(position) {
+      L.mapquest.key = '2cTeVV2w2dqN3oJi0RM8n2vwdfvnbJzR';
 
-    function onSuccess(position) {
-        var element = document.getElementById('geolocation');
-        element.innerHTML = 'Latitude: '  + position.coords.latitude      + '<br />' +
-                            'Longitude: ' + position.coords.longitude     + '<br />' +
-                            '<hr />'      + element.innerHTML;
-    }
+      var map = L.mapquest.map('map', {
+          center: [position.coords.latitude,position.coords.longitude],
+          layers: L.mapquest.tileLayer('map'),
+          zoom: 12
+      });
+      map.addControl(L.mapquest.control());
+  }
 
-    function clearWatch() {
-        if (watchID != null) {
-            navigator.geolocation.clearWatch(watchID);
-            watchID = null;
-        }
-    }
-
-    function onError(error) {
-    alert('code: '    + error.code    + '\n' +
-          'message: ' + error.message + '\n');
-    }
 }); 

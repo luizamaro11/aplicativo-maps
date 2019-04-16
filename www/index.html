@@ -8,26 +8,36 @@
   <script src="components/loader.js"></script>
   <script src="components/jquery-3.3.1.min.js"></script>
   <script src="components/acao.js"></script>
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
 
 </head>
 <body>
     <div class="container">
+
       <div class="caixa">
         <div class="row titulo">
             <div class="col-xs-12">
                 <h1>aplication maps</h1>
             </div>
         </div>
+
         <div class="caixa1">
           <div class="row">
               <div class="col-xs-12">
-                  <button class="btn btn-block" id="mapa">see maps</button>
+                  <button class="btn btn-block" id="mapa">see my location</button>
               </div>
           </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="map"></div>
+          </div>     
         </div>
       </div>
     </div>

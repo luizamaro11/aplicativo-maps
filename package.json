@@ -8,7 +8,8 @@
         "cordova-plugin-geolocation": "4.0.1",
         "cordova-plugin-network-information": "2.0.1",
         "cordova-plugin-dialogs": "2.0.1",
-        "cordova-plugin-vibration": "2.1.6"
+        "cordova-plugin-vibration": "2.1.6",
+        "cordova-plugin-globalization": "1.0.9"
     },
     "cordova": {
         "plugins": {
@@ -19,7 +20,8 @@
             "cordova-plugin-geolocation": {},
             "cordova-plugin-network-information": {},
             "cordova-plugin-dialogs": {},
-            "cordova-plugin-vibration": {}
+            "cordova-plugin-vibration": {},
+            "cordova-plugin-globalization": {}
         }
     },
     "scripts": {

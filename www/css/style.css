@@ -10,7 +10,7 @@
   border-top-right-radius: 15px;
 }
 .caixa{
-  margin-top: 250px;
+  margin-top: 150px;
   
 }
 .caixa1{
@@ -33,4 +33,9 @@ body{
   background-image: url("../imagens/fundo.gif");
   background-repeat:no-repeat;
   background-size: 900px;;
+}
+
+#map {
+  width: 100%;
+  height: 530px;
 }
